@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Layout</title>
+</head>
+<body>
+
+<table border="1" width="600">
+
+    <!-- Row 1: A spans all 4 columns -->
+    <tr>
+        <td colspan="4" align="center"><h2>A</h2></td>
+    </tr>
+
+    <!-- Row 2: B spans 2 cols, C spans 2 cols -->
+    <tr>
+        <td colspan="2" rowspan="2" align="center"><h2>B</h2></td>
+        <td colspan="2" align="center"><h2>C</h2></td>
+    </tr>
+
+    <!-- Row 3: D and E (B still spanning) -->
+    <tr>
+        <td align="center"><h2>D</h2></td>
+        <td align="center"><h2>E</h2></td>
+    </tr>
+
+    <!-- Row 4: F spans 1 col rowspan 3, G spans 3 cols -->
+    <tr>
+        <td rowspan="3" align="center"><h2>F</h2></td>
+        <td colspan="3" align="center"><h2>G</h2></td>
+    </tr>
+
+    <!-- Row 5: H, I, J (F still spanning) -->
+    <tr>
+        <td align="center"><h2>H</h2></td>
+        <td align="center"><h2>I</h2></td>
+        <td rowspan="2" align="center"><h2>J</h2></td>
+    </tr>
+
+    <!-- Row 6: (F still spanning, J still spanning) K -->
+    <tr>
+        <td colspan="2" align="center"><h2>K</h2></td>
+    </tr>
+
+    <!-- Row 7: L spans 3 cols, M -->
+    <tr>
+        <td colspan="3" rowspan="2" align="center"><h2>L</h2></td>
+        <td align="center"><h2>M</h2></td>
+    </tr>
+
+    <!-- Row 8: N -->
+    <tr>
+        <td align="center"><h2>N</h2></td>
+    </tr>
+
+</table>
+
+</body>
+</html>
